@@ -16,7 +16,7 @@ if [ ! -f ${FIRST_RUN} ]; then
 fi
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-  WAYLAND_OPTS="--ozone-platform-hint=auto"
+  WAYLAND_OPTS="--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations"
 fi
 
 PYTHON_SITEDIR=$(python3 <<EOFPYTHON
